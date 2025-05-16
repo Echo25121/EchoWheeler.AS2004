@@ -9,6 +9,8 @@ Game_Start = 1
 Int_Num_Question = 0
 Game_end = 0
 count = 0
+import os
+import time 
 
 
 #Where I set Questions
@@ -75,6 +77,8 @@ while Game_Start == 1:
     print()
     for question in questions:
         Int_score = askQuestion(question[0], question[1], question[2], Int_score)
+        time.sleep(3)
+        os.system('clear')
     print ("Your score is " + str(Int_score))
     if Int_score == 5:
         print('Congratulations you got all of them right!')
@@ -87,6 +91,7 @@ while Game_Start == 1:
         Str_Continue = input("")
         if Str_Continue == "Y" or Str_Continue == "y":
             Game_Start = 1
+            os.system("clear")
         elif Str_Continue == "N" or Str_Continue == "n":
             print("Good bye")
             quit()
@@ -96,8 +101,9 @@ while Game_Start == 1:
             count += 1
 
 
-        
-        
+
+
+
         
         
         
