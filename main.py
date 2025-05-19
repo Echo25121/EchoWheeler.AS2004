@@ -3,7 +3,6 @@ Str_Answer = 0
 Cor_answer = 0
 Str_Continue = 0
 Intro = 'Hello and welcome to my quiz!'
-'This Quiz is about animals',
 Int_score = 0
 Game_Start = 1
 Int_Num_Question = 0
@@ -73,6 +72,7 @@ def askQuestion(name, answers, Cor_answer,Int_score):
 while Game_Start == 1:
     Game_Start = 0
     print(Intro)
+    print('This is a quiz about the famous movie trilogy The Lord Of The Rings')
     print('You will have to answer one out of four different choices 1, 2, 3 or 4')
     print()
     for question in questions:
@@ -82,6 +82,8 @@ while Game_Start == 1:
     print ("Your score is " + str(Int_score))
     if Int_score == 5:
         print('Congratulations you got all of them right!')
+    else:
+        print('You have unfortunately failed, maybe you could try again?')
     print("Do you want to try again? Y/N") 
     Int_score = 0
     #Game Ending
@@ -93,6 +95,7 @@ while Game_Start == 1:
             Game_Start = 1
             os.system("clear")
         elif Str_Continue == "N" or Str_Continue == "n":
+            os.system ("clear")
             print("Good bye")
             quit()
         else:
@@ -104,7 +107,10 @@ while Game_Start == 1:
 
 
 
-        
+
+
+
+
         
         
         
