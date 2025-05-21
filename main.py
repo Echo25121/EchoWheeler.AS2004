@@ -1,3 +1,8 @@
+print( """
+Lord of The Rings quiz
+Echo Wheeler
+this program is my NCEA level 1 
+""")
 # Setting functions, lists and variables
 Str_Answer = 0
 Cor_answer = 0
